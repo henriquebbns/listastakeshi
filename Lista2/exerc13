@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int valor;
+
+    cin>>valor;
+
+    cout<<"100: "<<valor/100<<"\n";
+    valor%=100;
+
+    cout<<"50: "<<valor/50<<"\n";
+    valor%=50;
+
+    cout<<"10: "<<valor/10<<"\n";
+    valor%=10;
+
+    cout<<"5: "<<valor/5<<"\n";
+    valor%=5;
+
+    cout<<"1: "<<valor;
+
+    return 0;
+}
