@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int n;
+    long long fat = 1;
+    int i = 1;
+
+    cout<<"Digite um numero positivo: ";
+    cin>>n;
+
+    // consistência
+    if(n < 0)
+    {
+        cout<<"Numero invalido";
+    }
+    else
+    {
+        while(i <= n)
+        {
+            fat = fat * i;
+            i++;
+        }
+
+        cout<<"Fatorial: "<<fat;
+    }
+
+    return 0;
+}
