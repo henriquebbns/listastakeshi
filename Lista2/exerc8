@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float base,altura,area;
+
+    cin>>base>>altura;
+
+    if(base>0 && altura>0)
+    {
+        area = (base*altura)/2;
+        cout<<"Area: "<<area;
+    }
+    else
+        cout<<"Valores invalidos";
+
+    return 0;
+}
