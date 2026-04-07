@@ -1,0 +1,44 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int n=0;
+
+    cout<<"Digite um numero positivo: ";
+    cin>>n;
+
+    // consistência
+    if(n < 0)
+    {
+        cout<<"Numero invalido";
+    }
+    else
+    {
+        if(n == 0)
+        {
+            cout<<"Binario: 0";
+        }
+        else
+        {
+            long long binario = 0;
+            long long base = 1;
+
+            while(n > 0)
+            {
+                int resto = n % 2;
+
+                binario = binario + resto * base;
+
+                base = base * 10;
+                n = n / 2;
+            }
+
+            cout<<"Binario: "<<binario;
+        }
+    }
+
+    return 0;
+}
