@@ -1,0 +1,56 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int N1 = -1, resto = 0, count = 3;
+
+    // consistência: só aceita positivo
+    while(N1 < 0)
+    {
+        cout<<"Digite um numero positivo: ";
+        cin>>N1;
+    }
+
+    // verifica se é par
+    if(N1 % 2 == 0)
+    {
+        if(N1 == 2)
+        {
+            cout<<"Numero primo";
+        }
+        else
+        {
+            cout<<"Nao primo";
+        }
+    }
+    else
+    {
+        // verificação para ímpares
+        while(count < N1)
+        {
+            resto = N1 % count;
+
+            if(resto == 0)
+            {
+                // encontrou divisor ? não é primo
+                count = N1;
+                cout<<"Nao primo";
+            }
+            else
+            {
+                count = count + 2;
+            }
+        }
+
+        // verificação final
+        if(count != N1)
+        {
+            cout<<"Numero primo";
+        }
+    }
+
+    return 0;
+}
