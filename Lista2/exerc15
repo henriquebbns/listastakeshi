@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int qtd;
+    float total;
+
+    cin>>qtd;
+
+    if(qtd<12)
+        total = qtd*1.30;
+    else
+        total = qtd*1.00;
+
+    cout<<"Total: "<<total;
+
+    return 0;
+}
