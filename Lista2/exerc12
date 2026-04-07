@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int cod, q;
+    float preco;
+
+    cin>>cod>>q;
+
+    if(cod==1) preco=32;
+    else if(cod==2) preco=45;
+    else if(cod==3) preco=37;
+    else if(cod==4) preco=33;
+
+    cout<<"Total: "<<preco*q;
+
+    return 0;
+}
