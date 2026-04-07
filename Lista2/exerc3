@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b;
+
+    cin>>a>>b;
+
+    if(a<b)
+    {
+        cout<<"Crescente: "<<a<<" "<<b<<"\n";
+        cout<<"Decrescente: "<<b<<" "<<a;
+    }
+    else
+    {
+        cout<<"Crescente: "<<b<<" "<<a<<"\n";
+        cout<<"Decrescente: "<<a<<" "<<b;
+    }
+
+    return 0;
+}
